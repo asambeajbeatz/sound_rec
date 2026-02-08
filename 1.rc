@@ -1,0 +1,73 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include <windows.h>
+#include "resource.h"
+
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "Открыт&ь...",                 ID_FILE_WAVE_OPEN
+        MENUITEM "С&охранить как...",           ID_FILE_WAVE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Вы&ход",                      ID_FILE_EXIT
+    END
+    POPUP "&Правка"
+    BEGIN
+        MENUITEM "&Клиппинг до 50%",            ID_EDIT_CLIPPING50
+        MENUITEM "&Изменить громкость",         ID_EDIT_CHANGEVOLUME
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "Запись/Воспроизведение:",     ID_VIEW_RECPLAY, GRAYED
+        MENUITEM "Детальная визуализация",      ID_VIEW_DETAILED_SHOW, CHECKED
+        MENUITEM "Peak meter",                  ID_VIEW_SHOW_OVERLOAD, CHECKED
+        MENUITEM "VU meter",                    ID_VIEW_SHOW_VU_METER, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "График звука:",               ID_VIEW_GRAPH, GRAYED
+        MENUITEM "Быстрая визуализация",        ID_VIEW_GRAPH_QUICK_VISUALIZATION
+        MENUITEM "Детальная визуализация",      ID_VIEW_GRAPH_DETAILED_VISUALIZATION
+        MENUITEM "Отображать клиппинг",         ID_VIEW_GRAPH_SHOW_OVERLOAD, CHECKED
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&Помощь",                     ID_ABOUT_HELP
+        MENUITEM "OpenGL &информация",          ID_ABOUT_OPENGL_INFO
+        MENUITEM "&О программе",                ID_ABOUT_VERSION
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORM_VOLUMECHANGE DIALOGEX 0, 0, 213, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Изменение громкости"
+FONT 10, "Arial", 700, 0, 0xCC
+BEGIN
+    DEFPUSHBUTTON   "Отмена",IDC_VOLUMECHANGE_CANCEL,124,46,50,14
+    CONTROL         "",IDC_VOLUMECHANGE_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,6,22,202,15
+    PUSHBUTTON      "Применить",IDC_VOLUMECHANGE_APPLY,39,46,50,14
+    LTEXT           "Новый уровень громкости:   ",IDC_VOLUMECHANGE_STATIC,44,7,125,8
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_8BIT           ICON                    "res\\64px_8bit.ico"
+
+IDI_ICON_REC_8BIT       ICON                    "res\\icon_rec_8bit.ico"

@@ -1,0 +1,24 @@
+# Build folders
+build/
+lib/
+
+# Visual Studio
+.vs/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+
+# OS junk
+Thumbs.db
+*.lnk
+
+# Logs
+*.log
+
+# Exe
+*.exe
+
+# Other files
+other_commands.txt
+git commands.txt
