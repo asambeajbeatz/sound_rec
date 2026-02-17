@@ -35,7 +35,7 @@
 
 ## Версии и история изменений
 * Актуальную версию программы всегда можно увидеть в окне **"О программе"** (определено в файле `version.h`).
-* Список всех изменений фиксируется в файле [changelog.txt](./changelog.txt)
+* Список всех изменений фиксируется в файле [changelog.ru.md](./changelog.ru.md)
 
 ---
 
@@ -76,4 +76,4 @@ To build for Windows XP, it is recommended to use **Visual Studio 2017/2019/2022
 
 ## Versions & Changelog
 * The current application version is available in the **"About"** window (defined in `version.h`).
-* Detailed history is available in the [changelog.txt](./changelog.txt) file.
+* Detailed history is available in the [changelog.en.md](./changelog.en.md) file.
