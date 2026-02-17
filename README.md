@@ -68,11 +68,11 @@
 * **Build System:** CMake.
 
 ## How to Build
-To build for Windows XP, we recommend using **Visual Studio 2017/2019/2022** with the `v141_xp` toolset installed.
+To build for Windows XP, it is recommended to use **Visual Studio 2017/2019/2022** with the `v141_xp` platform toolset installed.
 
 1. Run `GenerateProject.bat` to generate the solution files.
-2. Open `sound_rec.sln` inside the `build` folder.
-3. Build the project (Build -> Build Solution).
+2. Open `sound_rec.sln` located in the `build` folder.
+3. Build the project ("Build -> Build Solution" or press F5).
 
 ## Versions & Changelog
 * The current application version is available in the **"About"** window (defined in `version.h`).
